@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+
+        <h1>NAV BAR</h1>
+
+        <nav class="sociallinks">
+            <a href="">Photos</a>
+            <a href="">Shop</a>
+            <a href="">Services</a>
+            <a href="">Portfolio</a>
+            <a href="">Contacts</a>
+        </nav>
+
+        <button class="btn" onclick="togglehide()">Show/Hide</button>
+
+    </header>
+
+    <script>
+        function togglehide(){ 
+            let sociallinks = document.querySelector('.sociallinks');
+            if (sociallinks.style.display != 'none'){
+            sociallinks.style.display = ('none');
+            }
+            else {
+                sociallinks.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
